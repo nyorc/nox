@@ -1,0 +1,15 @@
+{
+  "name": "nox",
+  "description": "nyo 的日常 agent skills",
+  "owner": {
+    "name": "nyo",
+    "url": "https://nyo.tw/"
+  },
+  "plugins": [
+    {
+      "name": "nox",
+      "source": ".",
+      "description": "日常開發用的 skills"
+    }
+  ]
+}
