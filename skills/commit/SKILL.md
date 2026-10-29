@@ -52,11 +52,10 @@ description: 依照 repo 既有的 commit 風格進行 commit。當使用者要�
 
 ## 訊息本文
 
-主旨加 diff 說不清意圖時才加本文：
+主旨說不完這個 commit 帶來的結果時才加本文，用條列寫結果，不寫原因、背景或取捨理由：
 
-- 不明顯的取捨或設計決定
-- 繞過上游 bug 的 workaround，附 issue 連結
-- diff 看不出來的行為改變
+- 每條是一個可觀察的結果，例如行為改變、預設值、錯誤處理方式
+- 繞過上游 bug 的 workaround 附 issue 連結
 
 用 HEREDOC 傳入：
 
@@ -64,7 +63,8 @@ description: 依照 repo 既有的 commit 風格進行 commit。當使用者要�
 git commit -m "$(cat <<'EOF'
 parser: switch tokenizer to streaming mode
 
-Recursive tokenizer overflowed the stack on inputs >50k tokens.
+- Tokenize input as a stream instead of recursively
+- Accept inputs over 50k tokens
 EOF
 )"
 ```
