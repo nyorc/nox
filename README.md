@@ -16,6 +16,7 @@ claude plugin install nox --marketplace nyorc/nox
 - `conventional-commit`：同一套流程，風格固定為 `type(scope): description`（Conventional Commits）
 - `debugging`：系統化追出錯誤的根本原因，再動手修正
 - `tdd`：用紅燈、綠燈、重構的循環與 Tidy First 做測試驅動開發
+- `next`：依目前的對話提出接下來可以做的事，並建議先做哪一項，只提議不動手
 
 ## 授權
 
