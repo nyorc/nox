@@ -9,7 +9,13 @@
     {
       "name": "nox",
       "source": ".",
-      "description": "日常開發用的 skills"
+      "description": "日常開發用的 skills",
+      "author": {
+        "name": "nyo",
+        "url": "https://nyo.tw/"
+      },
+      "homepage": "https://github.com/nyorc/nox",
+      "license": "MIT"
     }
   ]
 }
